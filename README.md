@@ -266,3 +266,110 @@ AI-Research-Assistant
 │
 └── README.md
 ```
+
+# Design Principles
+
+The project was developed around a small set of engineering principles that prioritize maintainability, experimentation, and extensibility.
+
+- **Modularity** – Major capabilities such as retrieval, memory, evaluation, and workflows are implemented as independent components.
+- **Experimentation** – Retrieval methods, embedding models, and LLMs can be compared under a common evaluation framework.
+- **Grounded Responses** – Answers are generated using retrieved evidence instead of relying solely on parametric model knowledge.
+- **Separation of Responsibilities** – Specialized LangGraph agents perform retrieval, reasoning, critique, and response generation independently.
+- **Extensibility** – New retrievers, embedding models, LLM providers, and evaluation metrics can be integrated with minimal architectural changes.
+
+# Roadmap
+
+## Completed
+
+- ✅ Multi-Agent Question Answering
+- ✅ Paper Search
+- ✅ Paper Download
+- ✅ Local Paper Library
+- ✅ PDF / TXT / DOCX Support
+- ✅ Paper Analysis
+- ✅ Literature Review Generation
+- ✅ Conversation Memory
+- ✅ Research Memory
+- ✅ Vector Retrieval
+- ✅ BM25 Retrieval
+- ✅ Hybrid Retrieval
+- ✅ Evaluation Framework
+- ✅ Modern React Frontend
+
+## Planned
+
+- ⏳ Cross-Encoder Reranking
+- ⏳ ChromaDB Support
+- ⏳ Qdrant Support
+- ⏳ Multimodal RAG
+- ⏳ Figure Understanding
+- ⏳ Equation Understanding
+- ⏳ Docker Deployment
+- ⏳ Cloud Deployment
+- ⏳ Expanded Evaluation Benchmarks
+
+# Research Motivation
+
+Beyond providing practical assistance for reading and understanding scientific papers, this project explores Retrieval-Augmented Generation (RAG) as an engineering and research problem.
+
+The long-term objective is to build a unified platform for evaluating retrieval strategies, embedding models, and language models under reproducible experimental conditions.
+
+Rather than treating the assistant as a black-box chatbot, the platform emphasizes measurable quality through groundedness, citation accuracy, latency, hallucination detection, and comparative evaluation.
+
+This direction aims to bridge practical AI tooling with applied AI research.
+
+# Future Work
+
+Future development will focus on expanding both the research capabilities and the experimental framework.
+
+Planned directions include:
+
+- Cross-Encoder Reranking
+- Additional Vector Databases
+- More Embedding Models
+- Multiple LLM Providers
+- Automated Benchmark Suites
+- Figure Understanding
+- Equation Understanding
+- Multimodal Retrieval-Augmented Generation
+- Interactive Experiment Dashboard
+- Research Paper Generation
+- Scientific Benchmark Datasets
+
+# Repository Notice
+
+This repository serves as a portfolio and documentation showcase for the AI Research Assistant project.
+
+It includes project documentation, architecture diagrams, screenshots, and demonstrations.
+
+The complete implementation is maintained separately in a private development repository.
+
+# Acknowledgements
+
+This project builds upon ideas and technologies from the open-source AI community.
+
+Key technologies include:
+
+- FastAPI
+- React
+- TypeScript
+- LangGraph
+- LangChain
+- FAISS
+- Sentence Transformers
+- arXiv
+- Semantic Scholar
+
+# Citation
+
+If this project contributes to your research or work, please cite the accompanying research publication once available.
+
+Citation information will be added after publication.
+
+# License
+
+This repository is provided for portfolio and demonstration purposes.
+
+All rights reserved.
+
+The project documentation, diagrams, and media may not be redistributed or used commercially without permission.
