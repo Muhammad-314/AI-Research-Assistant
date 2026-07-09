@@ -27,7 +27,7 @@
 ## Dashboard
 
 <p align="center">
-<img src="screenshots/dashboard.png" width="90%">
+<img src="screenshots/Screenshot 2026-07-09 172219.png" width="90%">
 </p>
 
 ---
