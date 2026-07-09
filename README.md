@@ -115,17 +115,29 @@ This dual focus makes the project suitable both as a practical research assistan
 
 ![](screenshots/library.png)
 
+![](screenshots/library2.png)
+
 ---
 
 ## Chat
 
 ![](screenshots/chat.png)
 
+![](screenshots/chat1.png)
+
+![](screenshots/chat2.png)
+
 ---
 
 ## Paper Analysis
 
 ![](screenshots/analysis.png)
+
+![](screenshots/analysis1.png)
+
+![](screenshots/analysis2.png)
+
+![](screenshots/analysis3.png)
 
 ---
 
@@ -144,6 +156,8 @@ This dual focus makes the project suitable both as a practical research assistan
 ## Memory
 
 ![](screenshots/memory.png)
+
+![](screenshots/memory1.png)
 
 # System Architecture
 
