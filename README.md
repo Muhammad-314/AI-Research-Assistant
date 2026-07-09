@@ -97,7 +97,7 @@ This dual focus makes the project suitable both as a practical research assistan
 
 ## Dashboard
 
-![](screenshots/dashboard.png)
+![](screenshots/Screenshot 2026-07-09 172219.png)
 
 ---
 
