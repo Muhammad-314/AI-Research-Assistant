@@ -105,6 +105,10 @@ This dual focus makes the project suitable both as a practical research assistan
 
 ![](screenshots/search.png)
 
+![](screenshots/search1.png)
+
+![](screenshots/search2.png)
+
 ---
 
 ## Paper Library
