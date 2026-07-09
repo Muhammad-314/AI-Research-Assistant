@@ -159,6 +159,14 @@ This dual focus makes the project suitable both as a practical research assistan
 
 ![](screenshots/memory1.png)
 
+---
+
+## Settings
+
+![](screenshots/setting.png)
+
+---
+
 # System Architecture
 
 The AI Research Assistant follows a modular, service-oriented architecture designed for experimentation and extensibility.
