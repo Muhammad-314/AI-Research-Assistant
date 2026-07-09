@@ -168,7 +168,7 @@ The system separates the frontend, backend services, workflow orchestration, age
 This modular design enables the project to function both as an AI research assistant and as a research platform for evaluating Retrieval-Augmented Generation (RAG) systems.
 
 <p align="center">
-<img src="diagrams/system-architecture.png" width="100%">
+<img src="diagrams/hero diagram.svg" width="100%">
 </p>
 
 # Multi-Agent Question Answering Workflow
@@ -187,7 +187,7 @@ Each agent performs one clearly defined responsibility before passing control to
 | Writer Agent | Produces the final user-facing response |
 
 <p align="center">
-<img src="diagrams/qa-workflow.png" width="45%">
+<img src="diagrams/QA Agent Workflow.svg" width="45%">
 </p>
 
 # Literature Review Workflow
@@ -197,7 +197,7 @@ The literature review pipeline automates the process of collecting and synthesiz
 Starting from a research topic, the system searches for papers, downloads them, indexes the content, retrieves relevant evidence, summarizes individual papers, extracts common themes, and composes a structured literature review.
 
 <p align="center">
-<img src="diagrams/literature-workflow.png" width="100%">
+<img src="diagrams/Literature Review Workflow.svg" width="100%">
 </p>
 
 # Modular Retrieval Architecture
@@ -221,7 +221,7 @@ A major goal of the project is not only to generate grounded responses but also 
 Every experiment records multiple evaluation metrics that can later be compared across retrieval methods and model configurations.
 
 <p align="center">
-<img src="diagrams/evaluation-pipeline.png" width="90%">
+<img src="diagrams/Evaluation Pipeline.svg" width="90%">
 </p>
 
 ### Recorded Metrics
