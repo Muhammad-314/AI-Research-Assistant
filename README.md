@@ -140,3 +140,129 @@ This dual focus makes the project suitable both as a practical research assistan
 ## Memory
 
 ![](screenshots/memory.png)
+
+# System Architecture
+
+The AI Research Assistant follows a modular, service-oriented architecture designed for experimentation and extensibility.
+
+The system separates the frontend, backend services, workflow orchestration, agent reasoning, retrieval, and evaluation into independent components, allowing retrieval algorithms, embedding models, and LLMs to be replaced with minimal changes to the overall architecture.
+
+This modular design enables the project to function both as an AI research assistant and as a research platform for evaluating Retrieval-Augmented Generation (RAG) systems.
+
+<p align="center">
+<img src="diagrams/system-architecture.png" width="100%">
+</p>
+
+# Multi-Agent Question Answering Workflow
+
+Instead of relying on a single LLM call, the system decomposes question answering into specialized agents using LangGraph.
+
+Each agent performs one clearly defined responsibility before passing control to the next stage.
+
+| Agent | Responsibility |
+|--------|----------------|
+| Memory Agent | Retrieves relevant conversation and research memory |
+| Rewrite Agent | Improves and reformulates the user's question |
+| Retrieval Agent | Retrieves relevant document chunks |
+| Reasoning Agent | Generates a grounded answer using retrieved evidence |
+| Critic Agent | Reviews the response for consistency and potential hallucinations |
+| Writer Agent | Produces the final user-facing response |
+
+<p align="center">
+<img src="diagrams/qa-workflow.png" width="45%">
+</p>
+
+# Literature Review Workflow
+
+The literature review pipeline automates the process of collecting and synthesizing scientific literature.
+
+Starting from a research topic, the system searches for papers, downloads them, indexes the content, retrieves relevant evidence, summarizes individual papers, extracts common themes, and composes a structured literature review.
+
+<p align="center">
+<img src="diagrams/literature-workflow.png" width="100%">
+</p>
+
+# Modular Retrieval Architecture
+
+The retrieval layer is designed around interchangeable retrievers.
+
+Each retriever implements a common interface, allowing different retrieval strategies to be evaluated under identical experimental conditions.
+
+Currently implemented retrieval methods include:
+
+- Dense Vector Retrieval (FAISS)
+- Sparse Retrieval (BM25)
+- Hybrid Retrieval (Reciprocal Rank Fusion)
+
+This modular design enables systematic comparison of retrieval quality, latency, citation accuracy, groundedness, and overall response quality.
+
+# Evaluation Framework
+
+A major goal of the project is not only to generate grounded responses but also to evaluate the quality of Retrieval-Augmented Generation systems.
+
+Every experiment records multiple evaluation metrics that can later be compared across retrieval methods and model configurations.
+
+<p align="center">
+<img src="diagrams/evaluation-pipeline.png" width="90%">
+</p>
+
+### Recorded Metrics
+
+- Retrieval Method
+- Embedding Model
+- Large Language Model
+- Context Length
+- Latency
+- Token Usage
+- Citation Accuracy
+- Groundedness
+- Hallucination Detection
+- User Feedback
+
+The framework exports experiment results as structured reports, enabling reproducible comparison between retrieval strategies.
+
+# Technology Stack
+
+| Layer | Technologies |
+|--------|--------------|
+| Frontend | React, TypeScript, Vite, Tailwind CSS, shadcn/ui |
+| Backend | FastAPI |
+| Workflow Orchestration | LangGraph |
+| LLM Framework | LangChain |
+| Dense Retrieval | FAISS |
+| Sparse Retrieval | BM25 |
+| Hybrid Retrieval | Reciprocal Rank Fusion (RRF) |
+| Embeddings | Sentence Transformers |
+| Paper Search | arXiv API, Semantic Scholar |
+| LLM Providers | Groq (Designed to support OpenAI, Claude, Gemini) |
+| Evaluation | Custom Evaluation Framework + LLM-as-Judge |
+| Storage | JSON-based repositories |
+
+# Project Structure
+
+```text
+AI-Research-Assistant
+│
+├── app/
+│   ├── agents/
+│   ├── api/
+│   ├── database/
+│   ├── evaluation/
+│   ├── memory/
+│   ├── paper_download/
+│   ├── paper_search/
+│   ├── prompts/
+│   ├── retrievers/
+│   ├── services/
+│   └── workflows/
+│
+├── frontend/
+│
+├── data/
+│
+├── screenshots/
+│
+├── diagrams/
+│
+└── README.md
+```
