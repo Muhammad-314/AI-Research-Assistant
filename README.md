@@ -24,8 +24,6 @@
 
 # Demo
 
-# Demo
-
 <p align="center">
   <video src="demo/ai-research-assistant-demo.mp4" width="90%" controls>
   </video>
