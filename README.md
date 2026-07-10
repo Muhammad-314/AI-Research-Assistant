@@ -24,6 +24,13 @@
 
 # Demo
 
+# Demo
+
+<p align="center">
+  <video src="demo/ai-research-assistant-demo.mp4" width="90%" controls>
+  </video>
+</p>
+
 ## Dashboard
 
 <p align="center">
@@ -97,7 +104,7 @@ This dual focus makes the project suitable both as a practical research assistan
 
 ## Dashboard
 
-![](screenshots/Screenshot 2026-07-09 172219.png)
+![](screenshots/dashboard.png)
 
 ---
 
